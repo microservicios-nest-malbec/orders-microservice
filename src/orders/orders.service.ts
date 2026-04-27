@@ -10,8 +10,8 @@ import { PrismaClient } from '@prisma/client';
 import { ClientProxy, RpcException } from '@nestjs/microservices';
 import { OrderPaginationDto } from './dto/order-pagination.dto';
 import { ChangeOrderStatusDto } from './dto';
-import { NATS_SERVICE, PRODUCT_SERVICE } from 'src/config';
-import { firstValueFrom, throwError } from 'rxjs';
+import { NATS_SERVICE } from 'src/config';
+import { firstValueFrom } from 'rxjs';
 import { OrderWithProducts } from './interfaces/order-wiith-products.interface';
 import { PaidOrderDto } from './dto/paid-order.dto';
 
